@@ -1,10 +1,11 @@
-body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select,div {
     margin: 0;
-    padding: 0
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font: 12px "Microsoft Yahei","微软雅黑", "Arial Narrow", HELVETICA;
+    font: 12px "Microsoft Yahei", "微软雅黑", "Arial Narrow", HELVETICA;
     background: #fff;
     -webkit-text-size-adjust: 100%;
 }
@@ -39,5 +40,28 @@ table {
 
 p {
     word-wrap: break-word
+}
+
+@font-face {
+    font-family: 'LogoFont';
+    src: url('./public/font/logoFont.otf');
+}
+
+@font-face {
+    font-family: 'LogoFont1';
+    src: url('./public/font/heroicCondensed.ttf');
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: -webkit-linear-gradient(top,#C0E6FB,#A3C6FC); /* Safari 5.1 - 6 */
+    background: -o-linear-gradient(bottom,#C0E6FB,#A3C6FC); /* Opera 11.1 - 12*/
+    background: -moz-linear-gradient(bottom,#C0E6FB,#A3C6FC); /* Firefox 3.6 - 15*/
+    background: linear-gradient(to bottom,#C0E6FB,#A3C6FC); /* 标准的语法 */
+    z-index: -999;
 }
 

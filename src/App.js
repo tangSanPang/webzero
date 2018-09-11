@@ -1,28 +1,32 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SidebarForLeft from './view/sidebarForLeft';
+import SidebarForRight from './view/sidebarForRight'
+import MainContent from './view/mainContent'
+
 
 class App extends Component {
+
     render() {
         return (
             <div style={styles.app}>
-                <div style={styles.header}>
-
-                </div>
+                <SidebarForLeft/>
+                <MainContent/>
+                <SidebarForRight/>
             </div>
         );
     }
 }
 
+
 const styles = {
     app: {
-        textAlign: 'center'
+        width: 1200,
+        backgroundColor: 'rgba(255,255,255,.8)',
+        borderRadius: 10,
+        margin: '50px auto'
     },
-    header:{
-        width:'100%',
-        height:'80px',
-        backgroundColor:'#ddd'
-    }
+
+
 };
 
 export default App;
