@@ -52,16 +52,21 @@ p {
     src: url('./public/font/heroicCondensed.ttf');
 }
 
+@font-face {
+    font-family: 'LogoFont2';
+    src: url('./public/font/Adilla and Rita.otf');
+}
+
 #background {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: -webkit-linear-gradient(top,#C0E6FB,#A3C6FC); /* Safari 5.1 - 6 */
-    background: -o-linear-gradient(bottom,#C0E6FB,#A3C6FC); /* Opera 11.1 - 12*/
-    background: -moz-linear-gradient(bottom,#C0E6FB,#A3C6FC); /* Firefox 3.6 - 15*/
-    background: linear-gradient(to bottom,#C0E6FB,#A3C6FC); /* 标准的语法 */
+    background: -webkit-linear-gradient(top,rgba(209,219,189,.7),rgba(252,255,245,.7)); /* Safari 5.1 - 6 */
+    background: -o-linear-gradient(bottom,rgba(209,219,189,.7),rgba(252,255,245,.7)); /* Opera 11.1 - 12*/
+    background: -moz-linear-gradient(bottom,rgba(209,219,189,.7),rgba(252,255,245,.7)); /* Firefox 3.6 - 15*/
+    background: linear-gradient(to bottom,rgba(209,219,189,.7),rgba(252,255,245,.7)); /* 标准的语法 */
     z-index: -999;
 }
 
